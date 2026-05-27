@@ -205,7 +205,7 @@ export default function Home() {
       </section>
 
       <section className="max-w-7xl mx-auto px-6">
-        <div className="bg-white p-8.5 md:p-12 rounded-[2.5rem] border border-slate-100 shadow-xl space-y-10">
+        <div className="bg-gray-200 p-8.5 md:p-12 rounded-[2.5rem] border border-slate-100 shadow-xl space-y-10">
           <div className="space-y-2">
             <span className="text-xs font-bold text-[#2874F0] uppercase tracking-widest block">INVENTORY MODULES</span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-800">

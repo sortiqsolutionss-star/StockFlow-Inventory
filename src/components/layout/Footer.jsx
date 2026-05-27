@@ -28,13 +28,13 @@ export default function Footer() {
             Real-time corporate stock coordination, supply tracking, and quick quote acquisition for enterprise corporations and commercial logistics operations.
           </p>
           <div className="flex gap-3">
-            <a href="#" className="p-2 bg-slate-800 hover:bg-[#2874F0] hover:text-white rounded-lg transition-colors">
+            <a href="https://x.com/SortiqSolutions" className="p-2 bg-slate-800 hover:bg-[#2874F0] hover:text-white rounded-lg transition-colors">
               <FiTwitter className="w-4 h-4" />
             </a>
-            <a href="#" className="p-2 bg-slate-800 hover:bg-[#2874F0] hover:text-white rounded-lg transition-colors">
+            <a href="https://www.linkedin.com/company/sortiq-solutions/" className="p-2 bg-slate-800 hover:bg-[#2874F0] hover:text-white rounded-lg transition-colors">
               <FiLinkedin className="w-4 h-4" />
             </a>
-            <a href="#" className="p-2 bg-slate-800 hover:bg-[#2874F0] hover:text-white rounded-lg transition-colors">
+            <a href="https://sortiqsolutions.com/" className="p-2 bg-slate-800 hover:bg-[#2874F0] hover:text-white rounded-lg transition-colors">
               <FiGlobe className="w-4 h-4" />
             </a>
           </div>
@@ -78,15 +78,15 @@ export default function Footer() {
           <h4 className="text-sm font-bold uppercase tracking-wider text-white mb-4">Support & Help</h4>
           <div className="flex items-start gap-2.5 text-sm text-slate-400">
             <FiMapPin className="w-4.5 h-4.5 text-[#2874F0] shrink-0 mt-0.5" />
-            <span>100 Technology Plaza, Silicon Valley, CA 94025</span>
+            <span>E-51, Second Floor, Phase-8, Industrial Area, S.A.S. Nagar, Punjab 160071</span>
           </div>
           <div className="flex items-center gap-2.5 text-sm text-slate-400">
             <FiPhone className="w-4.5 h-4.5 text-[#2874F0]" />
-            <span>+1 (800) 555-FLOW</span>
+            <span>+91 9646522110</span>
           </div>
           <div className="flex items-center gap-2.5 text-sm text-slate-400">
             <FiMail className="w-4.5 h-4.5 text-[#2874F0]" />
-            <span>support@stockflow.com</span>
+            <span>sortiqsolutions@gmail.com</span>
           </div>
         </div>
 
