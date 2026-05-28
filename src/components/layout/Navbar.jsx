@@ -9,7 +9,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useInventory } from "@/context/InventoryContext";
-import { FiShoppingBag, FiHeart, FiLogOut, FiMenu, FiX, FiCheckCircle } from "react-icons/fi";
+import { FiShoppingBag, FiHeart, FiLogOut, FiMenu, FiX } from "react-icons/fi";
 import logo from "@/components/assets/navbarlogo.png";
 
 export default function Navbar({ onOpenCart }) {

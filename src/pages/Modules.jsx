@@ -120,7 +120,7 @@ export default function Modules() {
   const [activeModule, setActiveModule] = useState(modulesData[0]);
 
   return (
-    <div className="space-y-16 py-6 text-left relative overflow-hidden">
+    <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 py-10 space-y-16 text-left relative overflow-hidden">
       
       <div className="space-y-3">
         <span className="text-[10px] font-bold text-[#2874F0] uppercase tracking-widest block">OPERATIONAL MODULES</span>

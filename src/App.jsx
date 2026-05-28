@@ -34,17 +34,17 @@ function ProtectedRoute({ children }) {
 }
 
 function MainAppLayout() {
-  const [cartOpen, setCartOpen] = useState(false);
+  const { isCartOpen, setIsCartOpen } = useInventory();
 
   return (
     <div className="flex flex-col min-h-screen">
       <InteractiveBubbles />
-      <QuoteCartDrawer isOpen={cartOpen} onClose={() => setCartOpen(false)} />
+      <QuoteCartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
       <Toaster position="top-right" toastOptions={{ style: { fontSize: "12px", fontWeight: "600" } }} />
 
-      <Navbar onOpenCart={() => setCartOpen(true)} />
+      <Navbar onOpenCart={() => setIsCartOpen(true)} />
 
-      <main className="flex-grow w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 py-10">
+      <main className="flex-grow w-full flex flex-col">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/features" element={<Features />} />

@@ -142,8 +142,8 @@ export default function Home() {
   return (
     <div className="space-y-24 pb-16 text-left">
 
-      <section className="relative pt-12 pb-16 overflow-hidden px-6">
-        <div className="w-full max-w-[1920px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center">
+      <section className="w-full relative bg-white pt-12 pb-16 overflow-hidden">
+        <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center">
 
           <div className="lg:col-span-7 space-y-6">
             <span className="text-xs font-bold text-[#2874F0] tracking-wider uppercase block">
@@ -204,8 +204,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16">
-        <div className="bg-gray-200 p-8.5 md:p-12 rounded-[2.5rem] border border-slate-100 shadow-xl space-y-10">
+      <section className="w-full bg-[#F8FAFC] py-20 border-y border-slate-100">
+        <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 space-y-10">
           <div className="space-y-2">
             <span className="text-xs font-bold text-[#2874F0] uppercase tracking-widest block">INVENTORY MODULES</span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-800">
@@ -293,8 +293,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 py-6">
-        <div className="space-y-10">
+      <section className="w-full bg-white py-20">
+        <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 space-y-10">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div className="space-y-2">
               <span className="text-xs font-bold text-[#2874F0] uppercase tracking-widest block">Live Stock Overview</span>
@@ -343,8 +343,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 px-6">
-        <div className="w-full max-w-[1920px] mx-auto space-y-10">
+      <section className="w-full bg-[#F0FDF4]/40 py-20 border-y border-emerald-50">
+        <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 space-y-10">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div className="space-y-2">
               <span className="text-xs font-bold text-[#2874F0] uppercase tracking-widest block">WHY TEAMS CHOOSE US</span>
@@ -391,8 +391,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border border-slate-100 p-8.5 rounded-[2.5rem] shadow-xs">
+      <section className="w-full bg-white py-20">
+        <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center">
           <div className="lg:col-span-5 bg-gradient-to-br from-[#2874F0] to-blue-600 p-8.5 rounded-3xl text-white space-y-6 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
             <span className="text-xs font-bold bg-white/10 text-white border border-white/10 px-3 py-1 rounded-full uppercase tracking-wider w-fit block">
               Verified Stock Workflows
@@ -446,10 +447,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+        </div>
       </section>
 
-      <section className="bg-slate-950 text-white py-20 px-6 rounded-t-[3.5rem] border-t border-slate-800">
-        <div className="w-full max-w-[1920px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-stretch">
+      <section className="w-full bg-slate-950 text-white py-24 border-t border-slate-800">
+        <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-stretch">
 
           <div className="lg:col-span-6 bg-slate-900 p-8 rounded-3xl border border-slate-800/80 shadow-xl flex flex-col justify-between space-y-6 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
             <div>

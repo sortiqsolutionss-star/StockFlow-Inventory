@@ -41,7 +41,8 @@ const initialProducts = [
   { id: 27, name: "Travel Backpack Explorer", sku: "TRV-BPE-45L", category: "Apparel", price: 139, stock: 17, supplier: "Urban Travel Gear", description: "45L water-resistant backpack with laptop sleeve, USB charging port, and anti-theft pocket.", image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600&auto=format&fit=crop&q=80" },
   { id: 28, name: "Professional DSLR Camera", sku: "CAN-DSLR-90D", category: "Electronics", price: 1599, stock: 7, supplier: "Canon Imaging", description: "High-resolution DSLR camera with fast autofocus, 4K video recording, and interchangeable lenses.", image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&auto=format&fit=crop&q=80" },
   { id: 29, name: "Noise Cancelling Earbuds", sku: "BOSE-NCE-WHT", category: "Electronics", price: 279, stock: 26, supplier: "BOSE Distribution", description: "Wireless earbuds featuring immersive sound, adaptive noise cancellation, and long battery life.", image: "https://images.unsplash.com/photo-1606229365485-93a3b8ee0385?w=600&auto=format&fit=crop&q=80" },
-  { id: 30, name: "Industrial Storage Cabinet", sku: "IND-ISC-MTL", category: "Office", price: 699, stock: 8, supplier: "Industrial Space Co.", description: "Heavy-duty lockable steel storage cabinet with reinforced shelving for warehouse organization.", image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&auto=format&fit=crop&q=80" }
+  { id: 30, name: "Industrial Storage Cabinet", sku: "IND-ISC-MTL", category: "Office", price: 699, stock: 8, supplier: "Industrial Space Co.", description: "Heavy-duty lockable steel storage cabinet with reinforced shelving for warehouse organization.", image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&auto=format&fit=crop&q=80" },
+  { id: 31, name: "Electric Kettle Pro", sku: "PHI-EKP-17", category: "Home & Kitchen", price: 129, stock: 1, supplier: "Philips Appliances", description: "1.7L quick-boiling electric kettle with automatic shut-off and overheat protection.", image: "https://images.unsplash.com/photo-1738520420652-0c47cea3922b?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" }
 ];
 
 export function InventoryProvider({ children }) {
@@ -49,6 +50,7 @@ export function InventoryProvider({ children }) {
   const [products, setProducts] = useState(initialProducts);
   const [wishlist, setWishlist] = useState([]);
   const [quoteCart, setQuoteCart] = useState([]);
+  const [isCartOpen, setIsCartOpen] = useState(false);
   const [quoteRequests, setQuoteRequests] = useState([
     { id: "REQ-2026-8801", date: "2026-05-24", items: [{ name: "iPhone 15 Pro Max", qty: 2, price: 1199 }], total: 2398, status: "Approved" },
     { id: "REQ-2026-8802", date: "2026-05-26", items: [{ name: "Sony WH-1000XM5", qty: 1, price: 349 }, { name: "Wireless Charging Pad", qty: 3, price: 39 }], total: 466, status: "Pending Review" }
@@ -127,6 +129,7 @@ export function InventoryProvider({ children }) {
       setQuoteCart([...quoteCart, { product, quantity: Number(quantity) }]);
     }
     toast.success(`${product.name} added to quote request cart!`);
+    setIsCartOpen(true);
   };
 
   const updateQuoteQuantity = (productId, qty) => {
@@ -193,7 +196,9 @@ export function InventoryProvider({ children }) {
       addToQuoteCart,
       updateQuoteQuantity,
       removeFromQuoteCart,
-      submitQuoteRequest
+      submitQuoteRequest,
+      isCartOpen,
+      setIsCartOpen
     }}>
       {children}
     </InventoryContext.Provider>

@@ -45,7 +45,7 @@ export default function Products() {
     });
 
   return (
-    <div className="relative space-y-8">
+    <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 py-10 relative space-y-8">
       <div className="text-left">
         <h1 className="text-2xl font-bold tracking-tight text-slate-800">Operational Stock Catalog</h1>
         <p className="text-sm text-slate-500">Search items, check real-time stock levels, and coordinate bulk quote requests.</p>

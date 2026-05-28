@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 export default function Pricing() {
   return (
-    <div className="space-y-16 py-6 text-left">
+    <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 py-10 space-y-16 text-left">
       <div className="text-center space-y-3">
         <span className="text-[10px] font-bold text-[#2874F0] uppercase tracking-widest block">Flexible Operations Pricing</span>
         <h1 className="text-3xl font-extrabold text-slate-800">Sourcing Procurement Tiers</h1>

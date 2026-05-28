@@ -11,9 +11,10 @@ import { Link } from "react-router-dom";
 
 export default function About() {
   return (
-    <div className="space-y-24 py-8 text-left">
+    <div className="text-left w-full">
       
-      <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+      <section className="w-full bg-white py-12 md:py-20">
+        <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
         
         <div className="lg:col-span-7 bg-slate-50 p-10 rounded-3xl border border-slate-100 shadow-xl flex flex-col justify-between hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 relative overflow-hidden group">
           <div className="absolute -top-10 -right-10 w-40 h-40 bg-blue-500/5 rounded-full blur-2xl group-hover:scale-120 transition-transform"></div>
@@ -65,9 +66,11 @@ export default function About() {
           </div>
         </div>
 
-      </div>
+        </div>
+      </section>
 
-      <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 space-y-8">
+      <section className="w-full bg-slate-50 py-20 border-y border-slate-100">
+        <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 space-y-8">
         
         <div className="bg-slate-50 p-6 rounded-3xl border border-slate-100 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 grid grid-cols-1 md:grid-cols-12 gap-8 items-center group">
           <div className="md:col-span-5 rounded-2xl overflow-hidden h-48 bg-slate-100 relative">
@@ -123,9 +126,10 @@ export default function About() {
           </div>
         </div>
 
-      </div>
+        </div>
+      </section>
 
-      <div className="py-16 border-t border-b border-slate-100">
+      <section className="w-full bg-white py-20">
         <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 space-y-10">
           <h2 className="text-2xl font-extrabold text-slate-800 text-center uppercase tracking-wider">
             Core Values
@@ -172,9 +176,11 @@ export default function About() {
 
           </div>
         </div>
-      </div>
+        </div>
+      </section>
 
-      <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 space-y-10">
+      <section className="w-full bg-[#F0FDF4]/40 py-20 border-y border-emerald-50">
+        <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 space-y-10">
         <h2 className="text-2xl font-extrabold text-[#2874F0] text-center uppercase tracking-wider">
           Why Choose Us
           <div className="h-1.5 w-24 bg-[#FF6B00] rounded-full mt-3 mx-auto"></div>
@@ -219,9 +225,11 @@ export default function About() {
           </div>
 
         </div>
-      </div>
+        </div>
+      </section>
 
-      <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 space-y-10">
+      <section className="w-full bg-white py-20">
+        <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 space-y-10">
         <h2 className="text-2xl font-extrabold text-slate-800 text-center uppercase tracking-wider">
           Our Expertise
           <div className="h-1.5 w-24 bg-[#2874F0] rounded-full mt-3 mx-auto"></div>
@@ -266,11 +274,12 @@ export default function About() {
           </div>
 
         </div>
-      </div>
+        </div>
+      </section>
 
-      <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16">
-        <div className="bg-gradient-to-br from-[#0F172A] to-[#1E293B] text-white p-12 rounded-3xl text-center space-y-6 shadow-xl relative overflow-hidden group hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300">
-          <div className="absolute inset-0 bg-[#2874F0]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      <section className="w-full bg-slate-950 text-white py-24 border-t border-slate-800 relative overflow-hidden">
+        <div className="absolute inset-0 bg-blue-500/5 opacity-50"></div>
+        <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 text-center space-y-6 relative z-10">
           <span className="text-xs font-bold text-teal-400 uppercase tracking-widest block">PARTNER WITH STOCKFLOW</span>
           <h2 className="text-3xl font-extrabold max-w-2xl mx-auto leading-tight">
             Ready to modernize inventory operations with a more dependable system?
@@ -282,12 +291,12 @@ export default function About() {
             <Link to="/contact" className="px-6 py-3 bg-[#2874F0] hover:bg-[#2874F0]/90 text-white text-xs font-bold rounded-xl shadow-lg transition-all duration-300">
               Schedule a Demo
             </Link>
-            <Link to="/contact" className="px-6 py-3 bg-white hover:bg-slate-100 text-[#2874F0] text-xs font-bold rounded-xl shadow-md transition-all duration-300">
+            <Link to="/contact" className="px-6 py-3 bg-white/10 hover:bg-white/20 text-white text-xs font-bold rounded-xl transition-all duration-300">
               Contact Us
             </Link>
           </div>
         </div>
-      </div>
+      </section>
 
     </div>
   );

@@ -32,7 +32,7 @@ export default function Dashboard() {
     .reduce((acc, curr) => acc + curr.total, 0);
 
   return (
-    <div className="space-y-8">
+    <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 py-10 space-y-8">
       <div className="bg-white p-6.5 rounded-2xl border border-slate-100/80 shadow-xs flex flex-col sm:flex-row items-center gap-5 justify-between">
         <div className="flex items-center gap-4 text-left">
           <div className="w-14 h-14 rounded-full bg-[#2874F0]/10 text-[#2874F0] font-bold text-lg flex items-center justify-center border border-[#2874F0]/10">

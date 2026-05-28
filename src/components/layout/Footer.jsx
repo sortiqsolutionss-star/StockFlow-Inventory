@@ -175,26 +175,26 @@ export default function Footer() {
             </h4>
 
             <div className="space-y-4">
-              <div className="flex items-start gap-3 text-sm text-slate-400 leading-6">
+              <a href="https://maps.google.com/?q=E-51,+Second+Floor,+Phase-8,+Industrial+Area,+S.A.S.+Nagar,+Punjab+160071" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-sm text-slate-400 leading-6 hover:text-[#2874F0] transition-colors">
                 <FiMapPin className="w-4 h-4 text-[#2874F0] shrink-0 mt-1" />
 
                 <span>
                   E-51, Second Floor, Phase-8, Industrial Area,
                   S.A.S. Nagar, Punjab 160071
                 </span>
-              </div>
+              </a>
 
-              <div className="flex items-center gap-3 text-sm text-slate-400">
+              <a href="tel:+919646522110" className="flex items-center gap-3 text-sm text-slate-400 hover:text-[#2874F0] transition-colors">
                 <FiPhone className="w-4 h-4 text-[#2874F0]" />
 
                 <span>+91 9646522110</span>
-              </div>
+              </a>
 
-              <div className="flex items-center gap-3 text-sm text-slate-400 break-all">
+              <a href="mailto:sortiqsolutions@gmail.com" className="flex items-center gap-3 text-sm text-slate-400 break-all hover:text-[#2874F0] transition-colors">
                 <FiMail className="w-4 h-4 text-[#2874F0]" />
 
                 <span>sortiqsolutions@gmail.com</span>
-              </div>
+              </a>
 
               <div className="flex items-center gap-3 pt-2">
                 <a

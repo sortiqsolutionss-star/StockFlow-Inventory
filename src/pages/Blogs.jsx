@@ -30,7 +30,7 @@ export default function Blogs() {
   };
 
   return (
-    <div className="space-y-12 pb-16 text-left animate-fadeIn">
+    <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 py-10 space-y-12 pb-16 text-left animate-fadeIn">
       <div className="text-center space-y-4 pt-8">
         <span className="text-xs font-bold text-[#2874F0] uppercase tracking-widest block">Insights & Updates</span>
         <h1 className="text-4xl md:text-5xl font-extrabold text-slate-800 tracking-tight">Our Latest <span className="text-[#2874F0]">Blogs</span></h1>
