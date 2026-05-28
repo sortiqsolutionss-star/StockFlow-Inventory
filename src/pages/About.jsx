@@ -176,7 +176,6 @@ export default function About() {
 
           </div>
         </div>
-        </div>
       </section>
 
       <section className="w-full bg-[#F0FDF4]/40 py-20 border-y border-emerald-50">
