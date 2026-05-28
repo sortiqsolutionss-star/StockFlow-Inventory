@@ -90,15 +90,13 @@ export default function Navbar({ onOpenCart }) {
           >
             Contact Us
           </Link>
-          {currentUser && (
-            <Link
-              to="/dashboard"
-              className={`text-xs font-bold uppercase tracking-wider transition-colors ${isActive("/dashboard") ? "text-[#2874F0]" : "text-slate-600 hover:text-[#2874F0]"
-                }`}
-            >
-              Request Center
-            </Link>
-          )}
+          <Link
+            to="/blogs"
+            className={`text-xs font-bold uppercase tracking-wider transition-colors ${isActive("/blogs") ? "text-[#2874F0]" : "text-slate-600 hover:text-[#2874F0]"
+              }`}
+          >
+            Blogs
+          </Link>
         </nav>
 
         <div className="flex items-center gap-4.5">
@@ -234,15 +232,13 @@ export default function Navbar({ onOpenCart }) {
           >
             Contact Us
           </Link>
-          {currentUser && (
-            <Link
-              to="/dashboard"
-              onClick={() => setMobileMenuOpen(false)}
-              className={`block text-xs font-bold uppercase tracking-wider ${isActive("/dashboard") ? "text-[#2874F0]" : "text-slate-600"}`}
-            >
-              Request Center
-            </Link>
-          )}
+          <Link
+            to="/blogs"
+            onClick={() => setMobileMenuOpen(false)}
+            className={`block text-xs font-bold uppercase tracking-wider ${isActive("/blogs") ? "text-[#2874F0]" : "text-slate-600"}`}
+          >
+            Blogs
+          </Link>
           {!currentUser && (
             <div className="pt-4 border-t border-slate-100 flex gap-4">
               <Link

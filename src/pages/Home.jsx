@@ -175,15 +175,15 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 max-w-xl">
-              <div className="bg-white px-4 py-3 rounded-xl border border-slate-100 shadow-xs hover:shadow-md hover:-translate-y-1 hover:border-[#2874F0]/30 transition-all duration-300">
+              <div className="bg-white px-4 py-3 rounded-xl border border-slate-100 shadow-xs hover:shadow-md hover:-translate-y-1 hover:border-blue-400/50 transition-all duration-300">
                 <span className="text-lg font-extrabold text-[#2874F0] block">50+</span>
                 <span className="text-xs text-slate-400 font-bold uppercase tracking-wider block mt-0.5">Warehouses</span>
               </div>
-              <div className="bg-white px-4 py-3 rounded-xl border border-slate-100 shadow-xs hover:shadow-md hover:-translate-y-1 hover:border-[#2874F0]/30 transition-all duration-300">
+              <div className="bg-white px-4 py-3 rounded-xl border border-slate-100 shadow-xs hover:shadow-md hover:-translate-y-1 hover:border-emerald-400/50 transition-all duration-300">
                 <span className="text-lg font-extrabold text-[#2874F0] block">1,200+</span>
                 <span className="text-xs text-slate-400 font-bold uppercase tracking-wider block mt-0.5">Active Suppliers</span>
               </div>
-              <div className="bg-white px-4 py-3 rounded-xl border border-slate-100 shadow-xs hover:shadow-md hover:-translate-y-1 hover:border-[#2874F0]/30 transition-all duration-300">
+              <div className="bg-white px-4 py-3 rounded-xl border border-slate-100 shadow-xs hover:shadow-md hover:-translate-y-1 hover:border-purple-400/50 transition-all duration-300">
                 <span className="text-lg font-extrabold text-[#2874F0] block">99.98%</span>
                 <span className="text-xs text-slate-400 font-bold uppercase tracking-wider block mt-0.5">Inventory Precision</span>
               </div>
@@ -358,7 +358,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6.5 text-left">
-            <div className="bg-white p-6.5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] hover:rotate-1 hover:border-[#2874F0]/20 transition-all duration-300">
+            <div className="bg-white p-6.5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] hover:rotate-1 hover:border-blue-400 transition-all duration-300">
               <div className="p-3 w-fit rounded-xl bg-blue-50 text-[#2874F0] font-bold">
                 01
               </div>
@@ -368,7 +368,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white p-6.5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] hover:-rotate-1 hover:border-[#2874F0]/20 transition-all duration-300">
+            <div className="bg-white p-6.5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] hover:-rotate-1 hover:border-emerald-400 transition-all duration-300">
               <div className="p-3 w-fit rounded-xl bg-emerald-50 text-emerald-600 font-bold">
                 02
               </div>
@@ -378,7 +378,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white p-6.5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] hover:rotate-1 hover:border-[#2874F0]/20 transition-all duration-300">
+            <div className="bg-white p-6.5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] hover:rotate-1 hover:border-purple-400 transition-all duration-300">
               <div className="p-3 w-fit rounded-xl bg-purple-50 text-purple-600 font-bold">
                 03
               </div>
@@ -420,25 +420,25 @@ export default function Home() {
           </div>
 
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
-            <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-lg hover:-translate-y-1 hover:scale-[1.02] hover:-rotate-1 hover:border-[#2874F0]/20 transition-all duration-300">
+            <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-lg hover:-translate-y-1 hover:scale-[1.02] hover:-rotate-1 hover:border-pink-400 transition-all duration-300">
               <span className="text-xs font-bold text-slate-800 block">Multi-warehouse setup</span>
               <p className="text-xs text-slate-500 mt-1.5 leading-relaxed font-semibold">
                 Structured catalog allocation limits across different departments and localized stocks.
               </p>
             </div>
-            <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-lg hover:-translate-y-1 hover:scale-[1.02] hover:-rotate-1 hover:border-[#2874F0]/20 transition-all duration-300">
+            <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-lg hover:-translate-y-1 hover:scale-[1.02] hover:-rotate-1 hover:border-amber-400 transition-all duration-300">
               <span className="text-xs font-bold text-slate-800 block">Inventory visibility</span>
               <p className="text-xs text-slate-500 mt-1.5 leading-relaxed font-semibold">
                 Live indicators representing In Stock or Low Stock counts visible to logged-in buyers.
               </p>
             </div>
-            <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-lg hover:-translate-y-1 hover:scale-[1.02] hover:-rotate-1 hover:border-[#2874F0]/20 transition-all duration-300">
+            <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-lg hover:-translate-y-1 hover:scale-[1.02] hover:-rotate-1 hover:border-cyan-400 transition-all duration-300">
               <span className="text-xs font-bold text-slate-800 block">Supplier confidence</span>
               <p className="text-xs text-slate-500 mt-1.5 leading-relaxed font-semibold">
                 Consolidated quote dispatches and pre-vetted catalog pricing optimize buying routes.
               </p>
             </div>
-            <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-lg hover:-translate-y-1 hover:scale-[1.02] hover:-rotate-1 hover:border-[#2874F0]/20 transition-all duration-300">
+            <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-lg hover:-translate-y-1 hover:scale-[1.02] hover:-rotate-1 hover:border-indigo-400 transition-all duration-300">
               <span className="text-xs font-bold text-slate-800 block">Secure role access</span>
               <p className="text-xs text-slate-500 mt-1.5 leading-relaxed font-semibold">
                 Authorized operators and buyers can access the cart and submit dispatch requests.

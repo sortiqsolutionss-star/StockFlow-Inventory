@@ -21,6 +21,7 @@ import Dashboard from "@/pages/Dashboard";
 import Login from "@/pages/Login";
 import Signup from "@/pages/Signup";
 import Modules from "@/pages/Modules";
+import Blogs from "@/pages/Blogs";
 import QuoteCartDrawer from "@/components/layout/QuoteCartDrawer";
 import { Toaster } from "react-hot-toast";
 
@@ -52,6 +53,7 @@ function MainAppLayout() {
           <Route path="/products" element={<Products />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blogs" element={<Blogs />} />
           <Route 
             path="/dashboard" 
             element={
