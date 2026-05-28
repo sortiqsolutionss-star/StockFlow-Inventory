@@ -140,7 +140,7 @@ export default function Home() {
   };
 
   return (
-    <div className="space-y-24 pb-16 text-left">
+    <div className="pb-16 text-left">
 
       <section className="w-full relative bg-white pt-12 pb-16 overflow-hidden">
         <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center">
@@ -216,12 +216,12 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             <div className="lg:col-span-5 grid grid-cols-2 sm:grid-cols-3 gap-3 w-full">
               {[
-                { id: "balances", name: "Stock Balances", icon: FiActivity },
-                { id: "registry", name: "Asset Registry", icon: FiBox },
-                { id: "margins", name: "Safety Margins", icon: FiCompass },
-                { id: "cart", name: "Sourcing Cart", icon: FiShoppingBag },
-                { id: "suppliers", name: "Suppliers Hub", icon: FiUser },
-                { id: "audits", name: "Compliance Log", icon: FiShield }
+                { id: "balances", name: "Stock Balances", icon: FiActivity, hoverBorder: "hover:border-blue-400", hoverBg: "hover:bg-blue-50/40", hoverText: "group-hover:text-blue-600", activeColor: "border-blue-500 bg-blue-50 text-blue-600" },
+                { id: "registry", name: "Asset Registry", icon: FiBox, hoverBorder: "hover:border-emerald-400", hoverBg: "hover:bg-emerald-50/40", hoverText: "group-hover:text-emerald-600", activeColor: "border-emerald-500 bg-emerald-50 text-emerald-600" },
+                { id: "margins", name: "Safety Margins", icon: FiCompass, hoverBorder: "hover:border-amber-400", hoverBg: "hover:bg-amber-50/40", hoverText: "group-hover:text-amber-600", activeColor: "border-amber-500 bg-amber-50 text-amber-600" },
+                { id: "cart", name: "Sourcing Cart", icon: FiShoppingBag, hoverBorder: "hover:border-rose-400", hoverBg: "hover:bg-rose-50/40", hoverText: "group-hover:text-rose-600", activeColor: "border-rose-500 bg-rose-50 text-rose-600" },
+                { id: "suppliers", name: "Suppliers Hub", icon: FiUser, hoverBorder: "hover:border-indigo-400", hoverBg: "hover:bg-indigo-50/40", hoverText: "group-hover:text-indigo-600", activeColor: "border-indigo-500 bg-indigo-50 text-indigo-600" },
+                { id: "audits", name: "Compliance Log", icon: FiShield, hoverBorder: "hover:border-teal-400", hoverBg: "hover:bg-teal-50/40", hoverText: "group-hover:text-teal-600", activeColor: "border-teal-500 bg-teal-50 text-teal-600" }
               ].map((mod) => {
                 const ModIcon = mod.icon;
                 const isSelected = activeModule === mod.id;
@@ -230,13 +230,13 @@ export default function Home() {
                   <button
                     key={mod.id}
                     onClick={() => handleModuleSelect(mod.id)}
-                    className={`flex flex-col items-center justify-center p-4 rounded-xl border text-center transition-all duration-300 cursor-pointer hover:-translate-y-1.5 hover:scale-[1.03] hover:shadow-lg hover:border-[#2874F0]/30 ${isSelected
-                      ? "bg-[#2874F0]/5 border-[#2874F0] shadow-md text-[#2874F0]"
-                      : "bg-slate-50 border-slate-100 hover:border-slate-200 hover:bg-white text-slate-600"
+                    className={`group flex flex-col items-center justify-center p-4 rounded-xl border text-center transition-all duration-300 cursor-pointer hover:-translate-y-1.5 hover:scale-[1.03] hover:shadow-lg ${isSelected
+                      ? `${mod.activeColor} shadow-md`
+                      : `bg-slate-50 border-slate-100 text-slate-600 ${mod.hoverBorder} ${mod.hoverBg}`
                       }`}
                   >
-                    <ModIcon className="w-5 h-5 shrink-0" />
-                    <span className="text-xs font-bold mt-2">{mod.name}</span>
+                    <ModIcon className={`w-5 h-5 shrink-0 transition-colors ${!isSelected && mod.hoverText}`} />
+                    <span className={`text-xs font-bold mt-2 transition-colors ${!isSelected && mod.hoverText}`}>{mod.name}</span>
                   </button>
                 );
               })}
