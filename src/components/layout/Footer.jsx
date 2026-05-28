@@ -22,7 +22,7 @@ import logo from "@/components/assets/footerlogo.png";
 export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-300 pt-16 pb-8 border-t border-slate-800">
-      <div className="max-w-7xl mx-auto px-5 sm:px-6">
+      <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 items-start">
 
           <div className="flex flex-col h-full">

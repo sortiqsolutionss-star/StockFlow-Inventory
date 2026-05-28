@@ -21,7 +21,7 @@ export default function Pricing() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="w-full max-w-[1920px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
         <div className="bg-white p-6.5 rounded-2xl border border-slate-100 shadow-xs hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] hover:rotate-1 hover:border-[#2874F0]/30 transition-all duration-300 flex flex-col justify-between">
           <div className="space-y-5">
             <div>

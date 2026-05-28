@@ -44,7 +44,7 @@ function MainAppLayout() {
 
       <Navbar onOpenCart={() => setCartOpen(true)} />
 
-      <main className="flex-grow max-w-7xl w-full mx-auto px-6 py-10">
+      <main className="flex-grow w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 py-10">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/features" element={<Features />} />

@@ -13,7 +13,7 @@ export default function About() {
   return (
     <div className="space-y-24 py-8 text-left">
       
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+      <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
         
         <div className="lg:col-span-7 bg-slate-50 p-10 rounded-3xl border border-slate-100 shadow-xl flex flex-col justify-between hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 relative overflow-hidden group">
           <div className="absolute -top-10 -right-10 w-40 h-40 bg-blue-500/5 rounded-full blur-2xl group-hover:scale-120 transition-transform"></div>
@@ -67,7 +67,7 @@ export default function About() {
 
       </div>
 
-      <div className="max-w-5xl mx-auto px-6 space-y-8">
+      <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 space-y-8">
         
         <div className="bg-slate-50 p-6 rounded-3xl border border-slate-100 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 grid grid-cols-1 md:grid-cols-12 gap-8 items-center group">
           <div className="md:col-span-5 rounded-2xl overflow-hidden h-48 bg-slate-100 relative">
@@ -126,7 +126,7 @@ export default function About() {
       </div>
 
       <div className="py-16 border-t border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-6 space-y-10">
+        <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 space-y-10">
           <h2 className="text-2xl font-extrabold text-slate-800 text-center uppercase tracking-wider">
             Core Values
             <div className="h-1.5 w-24 bg-[#2874F0] rounded-full mt-3 mx-auto"></div>
@@ -174,7 +174,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 space-y-10">
+      <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 space-y-10">
         <h2 className="text-2xl font-extrabold text-[#2874F0] text-center uppercase tracking-wider">
           Why Choose Us
           <div className="h-1.5 w-24 bg-[#FF6B00] rounded-full mt-3 mx-auto"></div>
@@ -221,7 +221,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 space-y-10">
+      <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16 space-y-10">
         <h2 className="text-2xl font-extrabold text-slate-800 text-center uppercase tracking-wider">
           Our Expertise
           <div className="h-1.5 w-24 bg-[#2874F0] rounded-full mt-3 mx-auto"></div>
@@ -268,7 +268,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="w-full max-w-[1920px] mx-auto px-4 md:px-8 lg:px-12 xl:px-16">
         <div className="bg-gradient-to-br from-[#0F172A] to-[#1E293B] text-white p-12 rounded-3xl text-center space-y-6 shadow-xl relative overflow-hidden group hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300">
           <div className="absolute inset-0 bg-[#2874F0]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           <span className="text-xs font-bold text-teal-400 uppercase tracking-widest block">PARTNER WITH STOCKFLOW</span>
