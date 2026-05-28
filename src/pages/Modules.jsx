@@ -93,6 +93,26 @@ const modulesData = [
       "Automatic expiration notices",
       "ISO compliant archives"
     ]
+  },
+  {
+    id: "analytics",
+    number: "05",
+    title: "Supply Chain Analytics",
+    icon: FiSliders,
+    tag: "CUSTOM DASHBOARDS",
+    theme: "from-green-500 to-lime-600 shadow-green-500/10",
+    glowColor: "group-hover:shadow-green-500/30 border-green-500/20 hover:border-green-500/50",
+    desc: "Visualize complex supply chain data through customizable dashboards. Real-time widgets include inventory heatmaps, logistics flow diagrams, and procurement trend graphs.",
+    metrics: [
+      { label: "Data Freshness", value: "Live" },
+      { label: "Custom Widget Count", value: "12+" }
+    ],
+    features: [
+      "Drag-and-drop dashboard builder",
+      "Real-time data streaming",
+      "Pre-built logistics widgets",
+      "Exportable analytics reports"
+    ]
   }
 ];
 
